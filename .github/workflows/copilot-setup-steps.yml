@@ -1,0 +1,10 @@
+# Check for Python tests
+ls -la tests/
+ls -la *_test.py
+
+# Check for Node.js tests
+cat package.json | grep -A 5 '"test"'
+ls -la __tests__/ test/
+
+# Check for Go tests
+ls -la *_test.go
